@@ -1,0 +1,444 @@
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.img-container {
+  border: 2px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-container img {
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-nav .nav-link {
+  color: #666;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #333;
+}
+
+#intro {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#projects, 
+#work-experience,
+#about,
+#contact {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2,
+#work-experience h2,
+#about h2,
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#projects p,
+#work-experience p,
+#about p,
+#contact p {
+  line-height: 1.6;
+}
+
+#projects p:last-child,
+#work-experience p:last-child,
+#about p:last-child,
+#contact p:last-child {
+  margin-bottom: 0;
+}
+
+#projects {
+  background-color: #f8f8f8;
+}
+
+.project-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.project-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#projects .row {
+  margin-left: -10px; /* Adjust for default Bootstrap padding */
+  margin-right: -10px; /* Adjust for default Bootstrap padding */
+}
+
+#projects .col-md-6 {
+  padding: 10px; /* Adjust for default Bootstrap padding */
+}
+
+.project-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-item img:hover {
+  transform: scale(1.05);
+}
+
+#about {
+  background-color: #f5f5f5;
+}
+
+#contact {
+  background-color: #f8f8f8;
+}
+
+/* Assuming your existing styles are retained */
+
+/* Flexbox styles for the grid layout */
+.contact-section {
+  text-align: center; /* Center the content horizontally */
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Adjust column width */
+  gap: 20px; /* Add space between grid items */
+  max-width: 800px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+/* Style for each grid item */
+.mail,
+.contact-number,
+.instagram {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+}
+
+.btn-primary {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn-primary:hover {
+  background-color: #222;
+  border-color: #222;
+}
+#recommendation {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+#recommendation h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.recommendation-block {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recommendation-block:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-block h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recommendation-block p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.recommendation-modal .modal-body {
+  padding: 20px;
+}
+
+.recommendation-modal .modal-body h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recommendation-modal .modal-body p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: #222;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Update background color for different sections */
+.dark-mode #intro,
+.dark-mode #projects,
+.dark-mode #work-experience,
+.dark-mode #about,
+.dark-mode #contact,
+.dark-mode #recommendation,
+.dark-mode .recommendation-block {
+  background-color: #222; /* Dark background */
+}
+
+/* Update font color for text elements */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode p,
+.dark-mode #recommendation h2,
+.dark-mode .modal-content {
+  color: #fff;
+}
+
+/* Update button styles */
+.dark-mode .btn-primary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #333;
+}
+
+.dark-mode .btn-primary:hover {
+  background-color: #eee;
+  border-color: #eee;
+  color: #222;
+}
+
+/* Update background color and font color for navbar */
+.dark-mode .navbar {
+  background-color: #222 !important; /* Dark background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .navbar-brand {
+  color: #fff !important; /* Light text color */
+}
+
+.dark-mode .navbar-nav .nav-link {
+  color: #fff !important; /* Light text color */
+}
+
+.dark-mode .navbar-nav .nav-link:hover {
+  color: #ccc !important; /* Light text color on hover */
+}
+
+/* Light Mode */
+.project-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.project-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode */
+.dark-mode .project-item {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+.dark-mode .project-item:hover {
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Light Mode */
+#projects .row {
+  margin-left: -10px; /* Adjust for default Bootstrap padding */
+  margin-right: -10px; /* Adjust for default Bootstrap padding */
+}
+
+#projects .col-md-6 {
+  padding: 10px; /* Adjust for default Bootstrap padding */
+}
+
+/* Dark Mode */
+.dark-mode #projects .row {
+  background-color: #222; /* Dark background color */
+  margin-left: -10px; /* Adjust for default Bootstrap padding */
+  margin-right: -10px; /* Adjust for default Bootstrap padding */
+}
+
+.dark-mode #projects .col-md-6 {
+  padding: 10px; /* Adjust for default Bootstrap padding */
+}
+
+/* Light Mode */
+.project-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark-mode .project-item img {
+  filter: brightness(1.5); /* Slightly brighten the image */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.dark-mode .project-item img:hover {
+  transform: scale(1.05);
+  filter: brightness(1); /* Reset brightness on hover */
+}
+
+/* Image Rotate Animation */
+
+@property --a {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+
+@property --d {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+/* Dark mode adjustments for the grid layout */
+.dark-mode .contact-grid {
+  background-color: #33333300; /* Dark background color */
+}
+
+.dark-mode .mail,
+.dark-mode .contact-number,
+.dark-mode .instagram {
+  background-color: #444; /* Darker background color for items */
+  color: #fff; /* Light text color */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.489); /* Adjust shadow color */
+}
+
+.dark-mode .contact-grid a {
+  color: #08a88b00; /* Green link color in dark mode */
+}
+
+#my-pic {
+  margin-left: 100px;
+  --b: 10px; /* control the border thickness */
+  --g: 20px; /* control the gap */
+
+  --d: 30%;
+  --a: 45deg;
+  --_o: 50% + (var(--d) + var(--g) + var(--b));
+  --_i: 50% + (var(--d) + var(--g));
+  --_f: 50% + (var(--d));
+  clip-path: polygon(
+    /*  */ calc(var(--_o) * sin(-45deg + var(--a)))
+      calc(var(--_o) * cos(-45deg + var(--a))),
+    calc(var(--_o) * sin(45deg + var(--a)))
+      calc(var(--_o) * cos(45deg + var(--a))),
+    calc(var(--_o) * sin(135deg + var(--a)))
+      calc(var(--_o) * cos(135deg + var(--a))),
+    calc(var(--_o) * sin(225deg + var(--a)))
+      calc(var(--_o) * cos(225deg + var(--a))),
+    calc(var(--_o) * sin(-45deg + var(--a)))
+      calc(var(--_o) * cos(-45deg + var(--a))),
+    /*  */ calc(var(--_i) * sin(-45deg + var(--a)))
+      calc(var(--_i) * cos(-45deg + var(--a))),
+    calc(var(--_i) * sin(225deg + var(--a)))
+      calc(var(--_i) * cos(225deg + var(--a))),
+    calc(var(--_i) * sin(135deg + var(--a)))
+      calc(var(--_i) * cos(135deg + var(--a))),
+    calc(var(--_i) * sin(45deg + var(--a)))
+      calc(var(--_i) * cos(45deg + var(--a))),
+    calc(var(--_i) * sin(-45deg + var(--a)))
+      calc(var(--_i) * cos(-45deg + var(--a))),
+    /*  */ calc(var(--_f) * sin(-45deg + var(--a)))
+      calc(var(--_f) * cos(-45deg + var(--a))),
+    calc(var(--_f) * sin(45deg + var(--a)))
+      calc(var(--_f) * cos(45deg + var(--a))),
+    calc(var(--_f) * sin(135deg + var(--a)))
+      calc(var(--_f) * cos(135deg + var(--a))),
+    calc(var(--_f) * sin(225deg + var(--a)))
+      calc(var(--_f) * cos(225deg + var(--a))),
+    calc(var(--_f) * sin(-45deg + var(--a)))
+      calc(var(--_f) * cos(-45deg + var(--a)))
+  );
+
+  outline: 166px solid #2c2c2c; /* color here */
+  outline-offset: 2px; /* a small value to avoid a visual glitch */
+  cursor: pointer;
+  transition: --d 0.3s, --a 0.2s 0.2s;
+}
+
+#my-pic:hover {
+  --a: 0deg;
+  --d: 71%;
+  transition: --a 0.3s, --d 0.2s 0.2s;
+}
